@@ -2,13 +2,13 @@
     "DestinationType" : "virtual",
     "PartitionLayout" : [ { "disk" : "image.img", "partition" : 1, "size" : "32M", "type" : "EFI" },
                           { "disk" : "image.img", "partition" : 2, "size" : "16M", "type" : "swap" },
-                          { "disk" : "image.img", "partition" : 3, "size" : "2G", "type" : "linux" } ],
+                          { "disk" : "image.img", "partition" : 3, "size" : "4G", "type" : "linux" } ],
     "FilesystemTypes" : [ { "disk" : "image.img", "partition" : 1, "type" : "vfat" },
                           { "disk" : "image.img", "partition" : 2, "type" : "swap" },
                           { "disk" : "image.img", "partition" : 3, "type" : "ext4" } ],
     "PartitionMountPoints" : [ { "disk" : "image.img", "partition" : 1, "mount" : "/boot" },
                                { "disk" : "image.img", "partition" : 3, "mount" : "/" } ],
     "Version": "latest",
-    "Bundles": ["kernel-native", "os-core", "os-core-update", "clr-installer", "shipos-branding"],
+    "Bundles": ["kernel-lts", "os-core", "os-core-update", "clr-installer", "shipos-branding"],
     "PostNonChroot": ["./post-non-chroot.sh"]
 }

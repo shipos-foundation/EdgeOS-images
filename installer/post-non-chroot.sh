@@ -20,7 +20,7 @@ users:
 keyboard: us
 language: en_US.UTF-8
 timezone: UTC
-kernel: kernel-native
+kernel: kernel-lts
 EOL
 
 cat >${CHROOTPATH}/var/lib/clr-installer/bundles.json <<'EOL'
